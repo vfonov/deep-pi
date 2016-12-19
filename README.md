@@ -28,6 +28,12 @@ and run `./install.sh` script again.
 
 After ./install.sh is finished - it will ask if you want to update .bashrc to include call to initialize torch environment every time you login. If you  don't want it, you will have to execute command `. ~/torch/install/bin/torch-activate` before you will be able to lauch th. 
 
+### Alternative way to install torch on Raspbian, using precompiled blob
+I created an archive of torch installation compiled for Raspberry PI B+ , running Raspbian 8 
+You can download it here : https://github.com/vfonov/deep-pi/releases/download/v1/torch_intstall_raspbian_arm6l_20161218.tar.gz 
+Copy file to /home/pi, then run `tar zxf torch_intstall_raspbian_arm6l_20161218.tar.gz` - this will create torch subdirectory that will include only precompiled binaries. To activate it add `. torch/install/bin/torch-activate` in the end of the `~/.bashrc` file. 
+
+
 ### Installing deep-pi
 ```
 git clone https://github.com/vfonov/deep-pi 
