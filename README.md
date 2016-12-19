@@ -32,7 +32,7 @@ After ./install.sh is finished - it will ask if you want to update .bashrc to in
 ```
 git clone https://github.com/vfonov/deep-pi 
 ```
-After that you can launch `download_net.sh` script to download the pretrained NIN network ( based on https://gist.github.com/szagoruyko/0f5b4c5e2d2b18472854 )
+After that you can launch `download_net.sh` script to download the pretrained NIN network ( based on https://gist.github.com/szagoruyko/0f5b4c5e2d2b18472854 ) to the `/home/pi` path. **WARNING** pretrained network is 33Mb file!
 
 
 ### Running 
