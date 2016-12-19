@@ -1,7 +1,6 @@
-## DEEP PI
+# DEEP PI
 
-### An example of running deep neural-net image classifier on Raspberry PI
-
+## An example of running deep neural-net image classifier on Raspberry PI
 
 ### Installing torch on Raspbian
 If you are using minimal version of Raspbian, you will need to install several packages first:
@@ -36,7 +35,6 @@ git clone https://github.com/vfonov/deep-pi
 After that you can launch `download_net.sh` script to download the pretrained NIN network ( based on https://gist.github.com/szagoruyko/0f5b4c5e2d2b18472854 )
 
 
-
 ### Running 
 To run on a single image: `th test_single.lua <path to your image>` 
 To run continious classification using frames from camera ( I recommend using external USB camera) :
@@ -44,7 +42,7 @@ To run continious classification using frames from camera ( I recommend using ex
 nohup th -ldisplay.start 8000 0.0.0.0 & 
 th camera_interface.lua
 ```
-Then open web browser and point to to location http://<your raspberry ip>:8000  - replace <your raspberry ip> with IP address that your Raspberry PI is configured to use. 
+Then open web browser and point to to location http://your.raspberry.ip:8000  - replace your.raspberry.ip with IP address that your Raspberry PI is configured to use. 
   
 
 
