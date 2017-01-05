@@ -11,7 +11,7 @@ local display_output={}
 torch.setdefaulttensortype('torch.FloatTensor')
 
 -- load pre-trained model
-local prefix="/home/vfonov/"
+local prefix=os.getenv("HOME")
 
 local t = torch.Timer()
 local m=torch.load(prefix..'nin_bn_final_arm.t7')
